@@ -1,0 +1,69 @@
+/******************************************************************************
+* Playing Card Styles                                                         *
+*                                                                             *
+* Copyright 2001 by Mike Hall                                                 *
+* Please see http://www.brainjar.com for terms of use.                        *
+******************************************************************************/
+
+.card {
+  background-image: url("http://www.davidmcole.com/p/graphics/cardback.gif");
+  font-size: 20pt;
+  position: absolute;
+  width:  3.85em;
+  height: 5.00em;
+  border-radius: 9px;
+}
+
+.front {
+  background-color: #ffffff;
+  color: #333;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.red { color: #ff0000; }
+
+.index {
+  font-size: 50%;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 0.40em;
+  top:  0.25em;
+  border-radius: 7px;
+}
+
+.ace {
+  font-size: 300%;
+  position: absolute;
+  left: 0.400em;
+  top:  0.590em;
+}
+
+.face {
+  position: absolute;
+  left: 0.60em;
+  top:  0.45em;
+  width:  2.9em;
+  height: 4.0em;
+}
+
+.spotA1 { position: absolute; left: 0.80em; top: 0.5em; }
+.spotA2 { position: absolute; left: 0.80em; top: 1.5em; }
+.spotA3 { position: absolute; left: 0.80em; top: 2.0em; }
+.spotA4 { position: absolute; left: 0.80em; top: 2.5em; }
+.spotA5 { position: absolute; left: 0.80em; top: 3.5em; }
+
+.spotB1 { position: absolute; left: 1.75em; top: 0.5em; }
+.spotB2 { position: absolute; left: 1.75em; top: 1.0em; }
+.spotB3 { position: absolute; left: 1.75em; top: 2.0em; }
+.spotB4 { position: absolute; left: 1.75em; top: 3.0em; }
+.spotB5 { position: absolute; left: 1.75em; top: 3.5em; }
+
+.spotC1 { position: absolute; left: 2.70em; top: 0.5em; }
+.spotC2 { position: absolute; left: 2.70em; top: 1.5em; }
+.spotC3 { position: absolute; left: 2.70em; top: 2.0em; }
+.spotC4 { position: absolute; left: 2.70em; top: 2.5em; }
+.spotC5 { position: absolute; left: 2.70em; top: 3.5em; }

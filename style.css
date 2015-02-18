@@ -1,0 +1,90 @@
+.holdbuttons {
+	margin-top: 150px;
+	clear: both;
+	text-align: left;
+	padding-left: 118px;
+	min-height: 30px;
+}
+
+#hold1 {
+	display: none;
+}
+
+#hold2 {
+	display: none;
+}
+
+#hold3 {
+	display: none;
+}
+
+#hold4 {
+	display: none;
+}
+
+#hold5 {
+	display: none;
+}
+
+.menubuttons {
+	text-align: center;
+	margin-top: 40px; 
+	padding-left: 22px;
+}
+
+/***SHIT PETER ADDED***/
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  font-family: 'Verdana', Geneva, Verdana, sans-serif;
+  min-width: 960px;
+}
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0; /* Negative indent footer by it's height */
+	background: #e8e8e8;
+	background-size: cover;
+    min-width: 960px;
+}
+#header {
+	padding: 40px 0 20px;
+	background: #ccc;
+	text-align: center;
+}
+#body {
+	margin: 0px auto;
+	height: 1%;
+	zoom: 1;
+	color: #333;
+	overflow: hidden;
+}
+#menu-buttons-wrapper {padding-top: 35px;}
+#cards-wrapper {
+	margin-top: 80px;
+	clear: both;
+}
+
+/*button styles*/
+#bet, #score {background: #fff; width: 100px;}
+#bet.btn-progress[disabled]{opacity: .5}
+.hold {font-size: 20px; font-weight: bold; margin-right: 91px;}
+input.hold {caption-side: #666;}
+#deal {padding: 15px 50px; margin-top: -10px;}
+#deal.btn-success[disabled] {opacity: .5;}
+#message {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+ 
+ 
+/*misc alignment*/
+.aligncenter {text-align: center;}

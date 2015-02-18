@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- CSS and Bootstrap -->
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" href="cardstyle.css" type="text/css">
+		<link rel="stylesheet" href="bootstrap.css" type="text/css">
+		<!-- JS -->
+		<script src="js/jquery.js"></script> 
+		<script src="js/cards.js"></script>
+		<script src="js/cardgame.js"></script>
+		<script type="text/javascript"> 
+		$(document).ready(function() {
+			newScore();
+			var betAmount = 1;
+			document.getElementById("score").innerHTML = gameScore.getScore();
+			document.getElementById("bet").innerHTML = "Bet: $" + betAmount;
+			alert("done");
+		});
+		</script>
+		<!-- cache -->
+		<!<html manifest="file:///Users/david/Desktop/server/p/poker.appcache">
+	</head>
+	<body onkeydown="keyEvent(event);"> 
+		<div id="wrapper">
+			<div id="header" data-scroll-reveal="after 1.5s move 0px">
+				<div class="container">
+					<div class="row">
+						<div class="span6">
+							<label class="pull-left" id="message" onclick="manualInsert();">Set bet amount then click New Hand</label>
+						</div>
+						<div class="span4 offset2">
+							<div id="score" class="well-small pull-left" onclick="resetCacheScore();">---</div>
+							<div id="bet" class="well-small pull-right">---</div>
+						</div>
+					</div> <!-- row -->
+				</div><!container-->
+			</div> <!-- header -->
+			<div class="container">
+				<div id="cards-wrapper" class="row">
+					<div class="span2 offset1">
+						<div id="card1"></div> <!card1> 
+					</div>
+					<div class="span2">
+						<div id="card2"></div> <!card2>
+					</div>
+					<div class="span2">
+						<div id="card3"></div> <!card3>				
+					</div>
+					<div class="span2">
+						<div id="card4"></div> <!card4>
+					</div>
+					<div class="span2">
+						<div id="card5"></div> <!card5>
+					</div>
+				</div> <!--end card-wrapper-->
+				<div class="holdbuttons row"> 
+					<input type='button' class="btn hold" id="hold1" onclick="hold(this, 'hand1');" value='HOLD' /> <!hold1>
+					<input type='button' class="btn hold" id="hold2" onclick="hold(this, 'hand2');" value='HOLD' /> <!hold2>
+					<input type='button' class="btn hold" id="hold3" onclick="hold(this, 'hand3');" value='HOLD' /> <!hold3>
+					<input type='button' class="btn hold" id="hold4" onclick="hold(this, 'hand4');" value="HOLD" /> <!hold4>
+					<input type='button' class="btn hold" id="hold5" onclick="hold(this, 'hand5');" value="HOLD" /> <!hold5>
+				</div> <!holdbuttons>
+				<div id="menu-buttons-wrapper" class="row">
+					<div class="menubuttons"> 
+						<div class="span3 offset1"> 
+							<input type="button" class="btn change-bet btn-primary" id="betButton" onclick="gameState('changeBet');" value="Change Bet" data-scroll-reveal="enter left after .3s move 170px" />
+						</div>
+						<div class="span3">
+							<input type="button" class="btn btn-large btn-success deal" id="deal" onclick="gameState('finalDeal');" value="Deal" data-scroll-reveal="enter bottom after .5s move 170px" disabled/>
+						</div>
+						<div class="span3">
+							<input type="button" class="btn new-hand btn-danger" id="newgame" onclick="gameState('newGame');" value="New Hand" data-scroll-reveal="enter right after .4s move 170px"/>
+						</div>						 
+					</div> <!newgame>
+				</div> <!--end menu-button-wrapper-->
+			</div> <!container> 
+			
+			<div id="push"></div> <!--close push-->
+		</div> <!--close wrapper-->
+	
+		<footer></footer> <!--close footer-->
+		
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src='js/scrollReveal.js'></script>
+		  <script>
+		
+		      window.scrollReveal = new scrollReveal();
+		
+		  </script>
+
+	</body>
+</html>
